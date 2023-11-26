@@ -1,0 +1,58 @@
+﻿Assignment name: Assignment 5
+TCSS 305 C: Programming Practicum, Fall 2023
+
+
+Name: Liam Barragan
+UWNetID: liamcb
+
+
+Assignment Overview:
+The assignment was mostly to give me a better understanding of GUI listeners.
+From my understanding of the assignment, I had to put event handlers for the slider,
+increase and decrease button, checkbox, and textbox. For the buttons, everytime the
+increase button is pressed the number for the colors will increase, while the decrease
+button, it will decrease the number of the color. For the slider, everytime it is used
+it will either increase or decrease the number, when you move the slider right or left.
+For the checkbox, if it is checked off, then the user will be able to type the number for
+the color. Of course, the boundaries for the number is 0-255. Other than that, that was the
+whole assignment. So basically, the whole assignment is to get used to and understand GUI
+listeners.
+
+
+Technical Impression:
+For this assignment, I mostly used YouTube videos to help me get through
+this assignment. The videos just helped me get like an outline of the event handlers.
+Setting the boundaries and stuff like that was all done by me, as I kinda understand
+how to set the boundaries. Then for some off the event handlers, like the checkbox event
+handler, I just used the same code from the bookstore assignment. Other than that, YouTube
+videos mostly helped me out with the assignment. This assignment was not too difficult so
+I did not struggle or get frustrated with this assignment. What I found interesting however,
+was how the event handlers were are handling the events. What I mean is how each event is
+being handled through a couple lines of code. I found it cool that I was able to write a
+couple lines of code and I was able to do cool things like using the slider and being able
+to type on the textbox. I also found it interesting that there were different ways to handle
+the events. As I was on YouTube, I found different ways to solve the problem of adding
+different event handlers. Overall, I found this assignment to be cool and easy to do.
+
+
+Unresolved problems in my submission:
+On the bottom of the program, there is are duplicates of showing the color numbers,
+I could not figure out how to get rid of it, but it is there.
+
+
+Citations and Collaborations:
+I forgot but all these links heleped me out with adding each of the event handlers.
+https://www.youtube.com/watch?v=WMITfhvXVJg&t=427s
+
+https://www.youtube.com/watch?v=-rJdMaSgt38
+
+https://www.youtube.com/watch?v=GwxvLzQoMYM
+
+https://www.youtube.com/watch?v=gN29Y600k5g
+
+
+Extra Credit Attempted:
+None
+
+Questions:
+None
