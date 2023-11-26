@@ -1,0 +1,23 @@
+Q: Does it use the force?
+Q: Is it evil?
+Q: Is it learning about the darkside of the force?
+A: A: sith apprentice
+A: A: sith lord
+Q: Has it mastered the light side of the force?
+A: Jedi Master
+A: Jedi
+Q: Is it made out of metal?
+Q: Does it fly?
+Q: Can it destroy planets?
+A: star destroyer
+A: a spaceship
+A: droid
+Q: Is it made out of fur?
+Q: Can you ride it?
+A: Tauntaun
+A: ewok
+Q: Does it work for the Resistance?
+Q: Is it a leader?
+A: Rebel alliance general
+A: rebel soldiers 
+A: stormtrooper
