@@ -1,0 +1,72 @@
+Assignment name: Assignment 2
+TCSS 305 C: Programming Practicum, Fall 2023
+
+Name: Liam Barragan
+UWNetID: liamcb 
+
+
+Assignment Overview:
+The assignment was to build classes that build parent and child classes.
+This is supposed to help give practice with inheritance. For the parent class,
+I had to create methods that would be overridden in the child classes, and I even had
+to write methods that were being overridden in the parent classes (the class I had to
+override was the object class). Within each of the child classes (circle, squares, triangles,
+ and rectangle), I had to write methods that would give them names, calculate the area, and
+ write some hashcode. That was another thing, this assignment got me exposed to hashcode,
+ so that was something new I had to learn with this assignment. Going back to the specs,
+ I had to write a class that would create each of the shapes. The last class I had to write
+ was a class to help test these classes. In the test class, I had to make an arraylist that
+ contained the created objects (shapes) and I had to display the arraylist before and
+ after sorting the list. The way it was sorted was the name of the shapes, and then if they
+ are the same then it would compare the area number. Of course, this assignment was also
+ going to teach me how to utilize CheckStyle, PMD, and Spotbug. Learning these tools were
+  kinda essential for the project as it helped catch errors in my code and also taught me
+  better was to name variables. Essentially, this project is supposed to review
+ inheritance, teach how to use hashcode, and also utilizing the tools needed for this
+ class.
+
+
+Technical Impression:
+
+I utilized many things, but came up with most of the code to complete the assignment.
+Tom helped create the AbstractShapes class during class, and I used it for my code.
+He also shared how to write the hashCode() for the shapes classes (circle, square, etc)
+ during one of the lectures. He also explained about the shape factory and the shapetester
+  constructors, so that is what I used to help get rid of warnings from PMD. I was not sure
+  to add those contributions from Tom here, but I would like to mention that is what I used
+  to help me out with the assignment, utilizing what he taught in the lectures helped get
+  me started with the assignment. Overall, this assignment took me about 3-4 hours.
+  Writing the classes took me about 2 hours, but what took 2 more hours was checkstyle
+   and PMD. The most frustrating thing about the assignment was getting the errors out
+   for checkstyle and PMD. That was the most frustrating part of the assignment. Other
+   than that, it seemed a bit easier than the last assignment. I did find learning about
+   Hashcode to be very interesting for this assignment. I have never been exposed to it
+   before so that was super cool to learn about it for this assignment. There were not
+   any specific difficulties that I had when using PMD and checkstyle, it was just mostly
+   figuring what I did wrong and fixing it. Other than that this assignment was very
+   awesome to work on.
+
+
+Unresolved problems in my submission:
+I am not sure if I should place it here,
+but ALL of the errors that are placed in the PDF file called Ignored errors,
+ were all errors that Tom said to ignore.
+
+
+Citations and Collaborations:
+equals(final object)
+https://www.geeksforgeeks.org/equals-hashcode-methods-java/#
+
+Printing arraylist
+https://stackoverflow.com/questions/9265719/print-arraylist
+
+I also worked with a fellow classmate (Sado Iman), we both helped each by clarifying each others
+questions, such like what we didn't understand and what the project was asking for.
+
+Extra Credit:
+The extra credit I attempted was getting rid of the errors from CheckStyle and PMD, as stated
+above, all the errors that are Ignore Errors PDF are errors Tom said to ignore. In the PDF,
+I have provided are the errors to be ignored in order to receive the extra credit.
+Questions:
+None
+
