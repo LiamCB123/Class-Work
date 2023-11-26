@@ -1,0 +1,102 @@
+// Finish and comment me!
+
+package model;
+
+import java.math.BigDecimal;
+import java.math.RoundingMode;
+import java.util.HashSet;
+import java.util.Iterator;
+
+
+public class Cart {
+
+    private final HashSet<ItemOrder> myCart;
+    private boolean myMembership;
+
+    public Cart() {
+        myCart = new HashSet<>();
+    }
+
+
+    public void add(final ItemOrder theOrder) {
+        if (theOrder == null) {
+            throw new NullPointerException();
+        }
+        Iterator<ItemOrder> itr = myCart.iterator();
+        while (itr.hasNext()){
+            ItemOrder orderCheck = itr.next();
+            if (orderCheck.equals(theOrder)){
+                itr.remove();
+            }
+
+        }
+        myCart.add(theOrder);
+
+    }
+
+
+
+    public void setMembership(final boolean theMembership) {
+        if (!theMembership) {
+            throw new NullPointerException();
+        }
+        else{
+            myMembership = theMembership;
+        }
+    }
+
+
+    public BigDecimal calculateTotal() {
+        if (myCart == null) {
+            throw new NullPointerException();
+        }
+        BigDecimal total = BigDecimal.ZERO;
+        for (ItemOrder customerOrder : myCart) {
+            final int cartQuantity = customerOrder.getQuantity();
+            final int cartBulkQuantity = customerOrder.getItem().getBulkQuantity();
+            final BigDecimal cartPrice = customerOrder.getItem().getPrice();
+            final BigDecimal cartBulkPrice = customerOrder.getItem().getBulkPrice();
+            if (customerOrder == null && customerOrder.getItem() == null) {
+                throw new NullPointerException();
+            }
+            if (cartPrice == null && cartBulkPrice == null) {
+                throw new NullPointerException();
+            }
+            if (cartQuantity < 0 && cartBulkQuantity < 0) {
+                throw new IllegalArgumentException();
+            }
+            if (myMembership && customerOrder.getItem().isBulk()) {
+                final int quantity = cartQuantity / cartBulkQuantity;
+                final int remainderQuantity = cartQuantity % cartBulkQuantity;
+                total = total.add(cartBulkPrice.multiply(BigDecimal.valueOf(quantity)));
+                total = total.add(cartPrice).multiply(BigDecimal.valueOf(remainderQuantity));
+            }
+            else {
+                total = total.add(cartPrice).multiply(BigDecimal.valueOf(cartQuantity));
+            }
+        }
+        return total.setScale(2, RoundingMode.HALF_DOWN);
+    }
+
+
+    public void clear() {
+        myCart.clear();
+    }
+
+
+    public int getCartSize() {
+        return myCart.size();
+    }
+
+
+    @Override
+    public String toString() {
+        final StringBuilder sBuilder = new StringBuilder();
+        for (ItemOrder orderInCart : myCart) {
+            sBuilder.append(orderInCart.getItem()).append("\n");
+            sBuilder.append(orderInCart.getQuantity());
+        }
+        return sBuilder.toString();
+    }
+
+}

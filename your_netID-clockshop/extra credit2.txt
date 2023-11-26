@@ -1,0 +1,9 @@
+"You will freeze me to within 0.1 degree of absolute 0."
+The logic is as follows:
+The leader said:
+"If your statement is true, we will use your molecules to feed our fusion reactor. If your statement is false, we will freeze you to within 0.1 degree of absolute 0."
+If Mr. Spock's statement is true, then according to the rules the Logiconians would have to use his molecules to feed their fusion reactor.
+However, Mr. Spock made the statement: "You will freeze me to within 0.1 degree of absolute 0."
+For this statement to be true, the Logiconians would have to freeze Mr. Spock as he stated.
+But if they did freeze him, then his statement would be false (because he stated they would freeze him and they did).
+So for Mr. Spock's statement to be true, it must actually be false. This creates a logical paradox for the Logiconians.

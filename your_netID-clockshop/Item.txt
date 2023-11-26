@@ -1,0 +1,97 @@
+// Finish and comment me!
+
+package model;
+
+import java.math.BigDecimal;
+import java.text.NumberFormat;
+import java.util.Locale;
+
+public class Item {
+
+    private final String myName;
+    private final BigDecimal myPrice;
+    private BigDecimal myBulkPrice;
+    private int myBulkQuantity;
+
+    public Item(final String theName, final BigDecimal thePrice) {
+        if (theName == null) {
+            throw new IllegalArgumentException();
+        }
+        if (thePrice == null) {
+            throw new NullPointerException();
+        }
+        this.myName = theName;
+        this.myPrice = thePrice;
+   
+    }
+
+
+    public Item(final String theName, final BigDecimal thePrice, final int theBulkQuantity,
+                final BigDecimal theBulkPrice) {
+        if (theName == null || theBulkQuantity < 0) {
+            throw new IllegalArgumentException();
+        }
+        if (thePrice == null || theBulkPrice == null) {
+            throw new NullPointerException();
+        }
+        this.myName = theName;
+        this.myPrice = thePrice;
+        this.myBulkPrice = theBulkPrice;
+        this.myBulkQuantity = theBulkQuantity;
+
+    }
+
+
+    public BigDecimal getPrice() {
+        return myPrice;
+    }
+
+
+    public int getBulkQuantity() {
+        return myBulkQuantity;
+    }
+
+
+    public BigDecimal getBulkPrice() {
+        return myBulkPrice;
+    }
+
+    
+    public boolean isBulk() {
+        if (myBulkQuantity < 0) {
+            return false;
+        }
+        return true;
+    }
+
+
+    @Override
+    public String toString() {
+        final NumberFormat numFormat = NumberFormat.getCurrencyInstance(Locale.US);
+        String stringItem = myName + ", " + numFormat.format(myPrice);
+        if (isBulk()) {
+            stringItem += " (" + myBulkQuantity + " for "
+                    + numFormat.format(myBulkPrice) + ")";
+        }
+        return stringItem;
+    }
+
+    @Override
+    public boolean equals(final Object theOther) {
+        if (theOther == null || this.getClass() != theOther.getClass()) {
+            return false;
+        }
+        final Item otherItem = (Item) theOther;
+        return  myName.equals(otherItem.myName)
+                && myPrice.equals(otherItem.myPrice)
+                && myBulkPrice.equals(otherItem.myBulkPrice)
+                && myBulkQuantity == otherItem.myBulkQuantity;
+    }
+
+    @Override
+    public int hashCode() {
+        return myName.hashCode() + myPrice.hashCode() + myBulkPrice.hashCode()
+                + myBulkQuantity;
+    }
+
+}

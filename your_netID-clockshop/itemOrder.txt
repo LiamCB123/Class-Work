@@ -1,0 +1,37 @@
+// Finish and comment me!
+
+package model;
+
+
+public final class ItemOrder {
+
+    private final Item myItem;
+
+    private final int myQuantity;
+
+    public ItemOrder(final Item theItem, final int theQuantity) {
+
+        if (theItem == null || theQuantity < 0) {
+            throw new NullPointerException();
+        }
+        this.myItem = theItem;
+        this.myQuantity = theQuantity;
+    }
+
+
+    public Item getItem() {
+        return myItem;
+    }
+    
+
+    public int getQuantity() {
+        return myQuantity;
+    }
+
+    @Override
+    public String toString() {
+
+        return "Item Name: " + myItem + " Quantity: " + myQuantity;
+    }
+
+}

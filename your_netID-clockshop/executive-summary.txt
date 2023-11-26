@@ -1,0 +1,84 @@
+Assignment name: Assignment 1
+TCSS 305 C: Programming Practicum, Fall 2023
+
+Name: Liam Barragan
+UWNetID: liamcb
+
+
+Assignment Overview:
+The purpose of this assignment is to review material that was taught in previous classes. In this assignment, I did many things which include opening a file, writing in a file, utilizing arraylist, and making an object class. For my object class, I had to make different methods which had different functions, such as being a constructor, being able to create an object ( in this case the object being a clock), overriding different methods (which include the toString and compareTo methods), and being able to write methods for getters and setters. For my clockshop class, I had to build a class that helps store the clock objects into arraylists. I also had to write methods that would sort the clocks in the arraylist from smallest to the most time on the clocks, finding a object in an arraylist through a given index, reading through a file and placing the objects into an arraylist, opening and writing in that file, finding the index of the clock in the arraylist, and building an arraylist. I guess another thing that I think this project is supposed to help refresh is how to write a Java Doc comments. I say this because we did have to use Java Doc comments in the project, which important, but also because I assume Tom expects us to know this and being able to review Java Docs should help out throughout the quarter.Overall, this project is supposed to help give a refresher of what was taught before, and having these refreshers should help out with the material that will be given out later throughout the quarter.
+
+
+Technical Impression:
+For this assignment, it was a big refresher for me. I haven’t programmed with Java over the summer so I forgot a lot of the material of the summer. I was mostly looking up how to do certain things, like how to sort through an arraylist. I did see sample codes in my sources, and I just utilized in my code. For example, for the delimiter, I didn’t know how to utilize that so I looked up a YouTube video with example code, and I utilize that and made it to where the code was working for me. I also asked for clarification from another classmate to help me better understand the assignment. From there, my classmate was like a tutor and we talked it out until I figured out what I should do and put that into my code. For the most part, I wasn’t too frustrated on certain methods, but there were 3 methods I found particularly difficult. These methods were advanceHour, sortClocks, and fillClockShop. I was having a very difficult time with these methods, but I overcame those challenges by finding websites on StackOverflow and GeeksForGeeks that helped me see how I could solve this problem. One other thing, I found it a little difficult to do the Java Docs. It has been a while since I did that, that was why but I got the hang of it after looking through my old coding assignments and how I Java Docs those assignments. Other than that, I found everything else to be a little easier.
+
+
+Unresolved problems in my submission:
+From what I noticed with my code, everything seemed to work perfectly fine,
+so there should not be any problems that I am aware of.
+
+Citations and Collaborations:
+
+Advance min clock class
+https://stackoverflow.com/questions/33988439/java-clock-advancing-time
+
+Override for boolean Clock class
+https://www.geeksforgeeks.org/overriding-equals-method-in-java/#
+
+compareTo
+https://www.geeksforgeeks.org/how-to-override-compareto-method-in-java/
+
+For loop
+https://stackoverflow.com/questions/45143886/how-to-compare-two-arraylist-elements-using-java
+
+Delimiter
+https://www.youtube.com/watch?v=3RSXHVyzdmg
+
+https://stackoverflow.com/questions/60239428/java-usedelimiter-and-nextline
+sortClocks
+https://www.youtube.com/watch?v=a503I8pCmzE
+https://stackoverflow.com/questions/67148950/insertion-sort-using-compareto-in-a-arraylist-of-strings
+
+https://stackoverflow.com/questions/31377448/how-to-do-sorting-in-array-list-without-using-collections-in-java
+
+https://stackoverflow.com/questions/39011703/is-there-any-way-sorting-an-arraylist-of-objects-in-java-without-using-comparato
+toString() for clockshop
+https://www.youtube.com/watch?v=q5FxHEjPjCg
+
+https://stackoverflow.com/questions/36406808/for-each-loop-printing-details-from-an-arraylist-using-tostring
+
+findClock()
+https://stackoverflow.com/questions/28439819/return-element-at-position-index-no-arraylist
+
+https://stackoverflow.com/questions/28269798/how-do-i-get-the-index-of-an-object-in-an-arraylist-using-only-a-property-of-the
+
+getClock()
+https://stackoverflow.com/questions/2131802/arraylist-how-can-i-check-if-an-index-exists#:~:text=The%20method%20arrayList.,%2C%20it%20doesn't%20exist.&text=You%20could%20check%20for%20the%20size%20of%20the%20array.&text=Quick%20and%20dirty%20test%20for%20whether%20an%20index%20exists%20or%20not.
+
+setClock()
+https://www.youtube.com/watch?v=zbixSRSolKs
+
+File
+https://www.geeksforgeeks.org/io-bufferedwriter-class-methods-java/
+
+This.something better understanding
+https://stackoverflow.com/questions/3728062/what-is-the-meaning-of-this-in-java
+
+Anthoney Petrov helped me with my advanceHour class, he helped me understand the problem
+and helped me find an error in my code. To expand on that, I had a problem with it and I couldn't
+find it so I asked him to help me find what the problem was, he helped, and from there I wrote the code,
+that solved the problem, he did not share or give me the answer, I want to emphasize that.
+
+
+Extra Credit:
+I am not 100% sure if I did the extra credit, but I changed the delimiter to take in a : and a new line
+I am not sure if the way I did it was the write way, but when I run the test it works. I am not sure what else to put
+but I also made sure to do a while loop while using nextInt for the scanner to add the clocks.
+Basically my while loop is going through the file and adding it to the hour, minute and second,
+and then making it into the clock. Other then that I am not sure if I did the extra credit correct.
+
+Questions:
+I do have one question, when I was reading over how you want the java docs to be done, you mention
+to comment the source file, I was confused by that and didn't know what to do from there, so what do I do
+because I didn't know what a source file is what to comment on?
+
